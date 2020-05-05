@@ -1,0 +1,69 @@
+{
+  "name": "religram",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/react": "^9.1.1",
+    "antd": "^3.20.1",
+    "apis": "^0.1.2",
+    "axios": "^0.19.0",
+    "chai": "^4.2.0",
+    "draft-js": "^0.11.0",
+    "enzyme-to-json": "^3.4.0",
+    "immutable": "^4.0.0-rc.12",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-autosuggest": "^9.4.3",
+    "react-cropper": "^1.2.0",
+    "react-dom": "^16.8.6",
+    "react-facebook-login": "^4.1.1",
+    "react-hashtag": "^2.1.2",
+    "react-image-crop": "^8.2.2",
+    "react-image-file-resizer": "^0.2.0",
+    "react-image-filter": "^0.1.2",
+    "react-imgpro": "^1.4.1",
+    "react-js-snackbar": "^1.0.4",
+    "react-mentions": "^3.1.0",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-tag-input": "^6.4.0",
+    "react-tagsinput": "^3.19.0",
+    "reactjs-tag-input": "^2.0.13",
+    "redux": "^4.0.1",
+    "redux-form": "^8.2.3",
+    "redux-mock-store": "^1.5.3",
+    "redux-saga": "^1.0.3",
+    "reqwest": "^2.0.5",
+    "reselect": "^4.0.0",
+    "resize-base64": "^1.0.12"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "coverage": "react-scripts test --env=jsdom --watchAll=false --coverage",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0"
+  }
+}

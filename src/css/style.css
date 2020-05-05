@@ -1,0 +1,1319 @@
+@charset "UTF-8";
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #222;
+    line-height: 1.6;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+a{
+    color: #3897f0;
+    text-decoration: underline;
+}
+a:hover{
+    color: #00688B;
+}
+p{
+    margin: 0 0 10px;
+}
+h1{
+    font-size: 24px;
+}
+h2{
+    font-size: 22px;
+}
+h3{
+    font-size: 20px;
+}
+h4{
+    font-size: 18px;
+}
+h5, h6{
+    font-size: 16px;
+}
+.wrap{
+    margin: 0 auto;
+    max-width: 414px;
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    background: #fff;
+    min-height: calc(100vh - 7px);
+    padding-bottom: 38px;
+}
+.wrap > div{
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+form{
+    text-align: center;
+}
+.show-error{
+    margin-bottom: 20px;
+}
+input{
+    border: 1px solid #999;
+    padding: 0 10px;
+    line-height: 32px;
+    width: 100%;
+    /* margin-bottom: 20px; */
+    background: #efefef;
+}
+.input .input-text{
+     margin-bottom: 20px;
+}
+.input-text:focus{
+    border-color: #0099ff;
+}
+.more_button:hover{
+    color: #0099ff;
+}
+.btn{
+    min-width: 160px;
+    border: 0;
+    border-radius: 0;
+    line-height: 31px;
+    font-weight: 700;
+    background: #00688B;
+    color: #fff !important;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    text-decoration: none !important;
+    margin-top: 20px;
+}
+.btn:hover{
+    background-color: rgb(68, 174, 209);
+    cursor: pointer;
+}
+.btn.btn-full{
+    width: 100%;
+}
+.btn-signup-fb {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    font-family: arial, sans-serif;
+    color: #3897f0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.btn-signup-fb:hover{
+    text-decoration: none;
+    color:#00688B;
+}
+.center{
+    text-align: center;
+}
+.label-break{
+    display: inline-block;
+    width: 100%;
+    margin: 25px 0;
+    position: relative;
+    border-top: 1px solid #ccc
+}
+.label-break span{
+    background: #fff;
+    border: 0;
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    text-align: center;
+}
+.header{
+    padding: 10px 10px;
+}
+.header .logo{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.header .logo a{
+    color: #00688B;
+    font-size: 2.5em;
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.header .logo .slogan{
+    margin: -10px 0 0;
+    color: #222;
+    font-weight: 500;
+    font-size: 13px;
+}
+.content{
+    margin: 30px 0 0;
+}
+.form{
+    max-width: 280px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 300px;
+}
+.login-fb{
+    text-align: center;
+    margin: 0 0 10px;
+}
+.login-fb p{
+    margin: 0;
+}
+.login-fb p i{
+    font-size: 18px;
+    margin-right: 5px;
+}
+.login-fb p a{
+    color: #3897f0;
+    font-weight: bold;
+    cursor: pointer;
+}
+.forgot-pass{
+    text-align: center;
+    margin-top: 40px;
+}
+.sign-up{
+    padding: 0 15px;
+    text-align: center;
+}
+.sign-up a{
+    margin-left: 10px;
+}
+.login-fb-v2{
+    border: 1px solid #ccc;
+}
+.login-fb-v2 p{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 3px 0 2px;
+}
+.login-fb-v2 p i{
+    margin-right: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #043850;
+    color: #fff;
+    line-height: 30px;
+}
+.login-fb-v2 p a{
+    text-decoration: none;
+    color: #043850;
+}
+.form-sign-up{
+    margin-bottom: 20px;
+}
+.label-error,
+.label-pass{
+    background-repeat: no-repeat;
+    background-position: calc(100% - 7px) 50%;
+    background-size: 20px;
+    padding-right: 30px;
+}
+.label-error{
+    background-image: url("../images/icon_message_error.png");
+}
+.label-pass{
+    background-image: url("../images/icon_message_pass.png");
+}
+
+.image-cropper {
+    margin-top: 42px;
+}
+
+.message {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    color: #fff;
+    border-bottom: 1px solid #ccc;
+    font-weight: 500;
+    font-size: 16px;
+}
+.message p{
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+.message-error{
+    background: #cf2d3b;
+}
+.message-success{
+    background: #3897f0;
+}
+.sign-up-avatar{
+    margin-bottom: 30px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+.sign-up-avatar p{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ddd
+}
+.form-sign-up-fb{
+    margin-bottom: 20px;
+}
+.form-sign-up-fb button{
+    margin-top: 40px;
+}
+.form-forgot-pw p{
+    font-size: 13.5px;
+}
+.form-forgot-pw form{
+    margin-top: 20px;
+}
+.box-back{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+    margin-top: 20px;
+}
+.box-back a{
+    margin: 0;
+    text-decoration: none;
+    color: #222;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    display: inline-block;
+    font-weight: 500;
+}
+.box-back a:hover{
+    color: #00688B;
+}
+.box-back-v2{
+    margin: 0;
+}
+.box-back-v2 a{
+    border-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 10px;
+    position: relative;
+}
+.box-back-v2 i{
+    position: absolute;
+    top: 3px;
+    left: 0;
+    font-size: 17px;
+}
+.box-back-v3{
+    margin: -10px 0 0 10px;
+    padding: 0;
+    width: calc(100% - 20px) !important;
+    border-bottom: 1px solid #ddd;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-back-v3 a{
+    padding: 10px 0;
+}
+.box-back-v3 a, .box-back-v3 span{
+    border: 0;
+    font-weight: 500;
+    width: auto;
+}
+.box-back-v3 i{
+    font-size: 30px;
+    color: #222;
+}
+.box-back-v3 a{
+    color: #0099ff;
+}
+.form-forgot-pw-success{
+    max-width: 310px;
+}
+.box-info-forgot-pw{
+    display: inline-block;
+    width: 100%;
+    border: 2px solid #999;
+    padding: 10px;
+    margin: 10px 0 0;
+}
+.box-info-forgot-pw p{
+    color: #3897f0;
+    margin: 0;
+}
+.form-reset-pw label{
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    font-weight: 500;
+}
+.post-list{
+    display: inline-block;
+    width: 100%;
+}
+.post-item{
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+.post-item:last-child{
+    border-bottom: 0;
+}
+.post-item > div{
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+.post-user{
+    display: flex !important;
+    align-items: center;
+    padding: 0 10px;
+}
+.post-user > div{
+    display: inline-block;
+}
+.post-avatar{
+    margin-right: 10px;
+    display: flex !important;
+}
+.post-avatar a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #efefef;
+}
+.post-avatar img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.post-userName p, .post-userName a{
+    color: #222;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 500;
+}
+.post-userName p{
+    color: #999
+}
+.post-userName a:hover{
+    text-decoration: underline;
+}
+.post-userName p:last-child{
+    font-weight: 400;
+}
+.post-image{
+    padding: 10px 0;
+    position: relative;
+}
+.post-image p{
+    margin: 0;
+    line-height: 0;
+}
+.post-image .icon-next,
+.post-image .icon-prev{
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -14px 0 0;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+.post-image .icon-prev{
+    left: 10px;
+}
+.post-image .icon-next{
+    right: 10px;
+}
+.post-image .icon-dots{
+    text-align: center;
+    margin-top: 10px;
+}
+.post-image .icon-dots span{
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background: #444;
+}
+.post-event{
+    padding: 0 10px 10px;
+}
+.post-event p{
+    margin: 0;
+    font-size: 12px;
+}
+.post-event span {
+    margin: 0 5px 0 0;
+    display: inline-block;
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+ }
+ .post-event span a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+ }
+.post-event .post-icon-like{
+    background: url("../images/btn_like_03.png") no-repeat center center;
+    display: inline-block;
+}
+.post-event .post-icon-like.active{
+    background-image: url("../images/btn_like_02.png");
+}
+.post-event .post-icon-comment{
+    background: url("../images/btn_message.png") no-repeat center center;
+}
+.post-event .post-icon-upload{
+    background: url("../images/btn_upload.png") no-repeat center center;
+}
+.post-title{
+    padding: 0 10px;
+}
+.post-title p{
+    font-weight: 500;
+    font-size: 14px;
+}
+.post-view-all{
+    color: #999;
+    font-size: 12px;
+}
+.post-comment{
+    border-top: 1px solid #efefef;
+    padding: 10px 10px;
+}
+.post-comment__item{
+    padding: 5px 0;
+    display: inline-block;
+    width: 100%;
+}
+.post-comment__item .post-user{
+    padding: 0;
+    align-items: initial;
+}
+.post-comment__item .post-avatar{
+    margin-top: 2px;
+}
+.post-comment__item .post-userName p{
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+.post-comment__item .post-userName p:last-child{
+    color: #444444;
+}
+.post-comment__item .post-userName p:last-child a{
+    color: #3897f0;
+    text-decoration: underline;
+}
+.post-comment__content{
+    color: #444;
+    font-size: 12px;
+    width: calc(100% - 57px);
+    float: right;
+    margin-top: 10px;
+}
+.post-comment__reply{
+    padding: 0 0 0 40px;
+}
+.post-comment__reply .post-avatar a{
+    width: 25px;
+    height: 25px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    text-align: center;
+    line-height: 0;
+    width: 100%;
+}
+.footer .post-event{
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+    max-width: 414px;
+    margin: 0 auto;
+    background: #fff;
+    border-top: 1px solid #ddd;
+}
+.footer .post-event span{
+    display: inline-block;
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.footer .post-event .icon-plus a{
+    width: 26px;
+    display: inline-block;
+    border: 1px solid #333;
+    border-radius: 3px;
+    padding: 2px;
+}
+.footer .post-event .icon-plus img{
+    width: 20px;
+}
+.profile{
+    padding: 0 10px;
+}
+.profile .post-user{
+    padding: 0;
+}
+.profile-header .post-avatar{
+    margin-right: 15px;
+}
+.profile-header .post-avatar a{
+    width: 75px;
+    height: 75px;
+}
+.profile-header .post-avatar img{
+    width: 120px;
+    height: 120px;
+}
+.profile-header .post-userName .btn{
+    line-height: 28px;
+    min-width: 110px;
+    margin-top: 10px;
+    padding: 0 10px;
+    margin-right: 10px;
+}
+.post-user__name{
+    font-size: 13px;
+    font-weight: 500;
+    margin: 20px 17px 10px;
+}
+.post-user__name p{
+    margin: 0;
+}
+.profile-content{
+    margin: 15px 0 0;
+    display: inline-block;
+    width: 100%;
+}
+.tab{
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+.tab-title{
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #efefef;
+}
+.tab-title button{
+    background-color: #ffffff;
+    border: none;
+    display: inline-block;
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+    line-height: 1.2;
+    padding: 10px 5px;
+}
+.tab-title button.active{
+    font-weight: 500;
+    color: #00688B;
+    border: none;
+}
+.tab-title button span{
+    display: block;
+}
+.tab-content ul{
+    margin: 0;
+    padding: 0;
+}
+.tab-content li{
+    list-style: none;
+}
+.ul-list-post li{
+    width: 33.3%;
+    padding: 1px;
+    float: left;
+    line-height: 0;
+}
+.ul-list-post li a{
+    width: 129px;
+    height: 129px;
+    display: inline-block;
+}
+.ul-list-post li img{
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.ul-list-followers li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.ul-list-followers li .post-avatar a{
+    width: 40px;
+    height: 40px;
+}
+.btn-follow{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 0 10px;
+    border-radius: 4px;
+    border: 1px solid #00688B;
+    margin: 0;
+    min-width: 73px;
+}
+.btn-follow.active{
+    border-color: #ddd;
+    background: #fff;
+    color: #222 !important;
+}
+.form-change-profile{
+    margin-top: 20px;
+}
+.form-change-pw,
+.form-change-profile{
+    margin-top: 20px;
+}
+.form-change-pw label,
+.form-change-profile label{
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+}
+.form-change-pw button,
+.form-change-profile button{
+    margin-top: 30px;
+    max-width: 100px;
+}
+.profile-header .post-avatar-small a{
+    width: 60px;
+    height: 60px;
+}
+.form-change-pw button + p{
+    margin-top: 20px;
+}
+.photo-upload{
+    padding: 0 10px;
+}
+.photo-img{
+    width: 394px;
+    height: 394px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo-img img{
+    max-height: 100%;
+}
+.photo-event{
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
+}
+.photo-event p{
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+.photo-event p:last-child{
+    text-align: right;
+}
+.photo-event i{
+    font-size: 35px;
+    margin: 0 20px;
+}
+.photo-btn{
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+}
+.photo-btn .btn{
+    width: calc(50% - 1px);
+    float: left;
+    margin: 0 1px 0 0;
+    line-height: 40px;
+    min-width: 120px;
+}
+.photo-post .post-user {
+    display: table !important;
+    width: 100%;
+}
+
+.photo-post .post-user div{
+    display: table-cell !important;
+    vertical-align: top;
+}
+.photo-post .post-avatar a{
+    float: left;
+}
+.photo-post .post-avatar p{
+    font-size: 12px;
+    padding: 7px 0 0 10px;
+    width: calc(100% - 50px);
+    float: left;
+    display: inline-block;
+}
+.post-imgThumb{
+    width: 40px;
+    height: 40px;
+}
+.post-imgThumb img{
+    max-height: 100%;
+    max-width: 100%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.post-list{
+    display: inline-block;
+    width: 100%;
+}
+.post-item{
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+.post-item:last-child{
+    border-bottom: 0;
+}
+.post-item > div{
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+.post-user{
+    display: flex !important;
+    align-items: center;
+    padding: 0 10px;
+}
+.post-user > div{
+    display: inline-block;
+}
+.post-avatar{
+    margin-right: 10px;
+    display: flex !important;
+}
+.post-avatar a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #efefef;
+}
+.post-avatar img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.post-userName p, .post-userName a{
+    color: #222;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 500;
+}
+.post-userName p{
+    color: #999
+}
+.post-userName a:hover{
+    text-decoration: underline;
+}
+.post-userName p:last-child{
+    font-weight: 400;
+}
+.post-image{
+    padding: 10px 0;
+    position: relative;
+}
+.post-image p{
+    margin: 0;
+    line-height: 0;
+}
+.post-image .icon-next,
+.post-image .icon-prev{
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -14px 0 0;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+.post-image .icon-prev{
+    left: 10px;
+}
+.post-image .icon-next{
+    right: 10px;
+}
+.post-image .icon-dots{
+    text-align: center;
+    margin-top: 10px;
+}
+.post-image .icon-dots span{
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background: #444;
+}
+.post-event{
+    padding: 0 10px 10px;
+}
+.post-event p{
+    margin: 0;
+    font-size: 12px;
+}
+.post-event span {
+    margin: 0 5px 0 0;
+    display: inline-block;
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+ }
+ .post-event span a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+ }
+.post-event .post-icon-like{
+    background: url("../images/btn_like_03.png") no-repeat center center;
+    display: inline-block;
+}
+.post-event .post-icon-like.active{
+    background-image: url("../images/btn_like_02.png");
+}
+.post-event .post-icon-comment{
+    background: url("../images/btn_message.png") no-repeat center center;
+}
+.post-event .post-icon-upload{
+    background: url("../images/btn_upload.png") no-repeat center center;
+}
+.truncate-text {
+    word-break: break-all;
+}
+.truncate-text span {
+    color: black;
+    font-weight: bold;
+}
+.post-title{
+    padding: 0 10px;
+}
+.post-title p{
+    font-weight: 500;
+    font-size: 14px;
+}
+.post-view-all{
+    color: #999;
+    font-size: 12px;
+}
+.post-comment-form{
+    width: 100%;
+    display: inline-block;
+    border-top: 1px solid #efefef;
+}
+.post-comment{
+    border-top: 1px solid #efefef;
+    padding: 10px 10px;
+}
+.post-comment__item{
+    padding: 5px 0;
+    display: inline-block;
+    width: 100%;
+}
+.post-comment__item .post-user{
+    padding: 0;
+    align-items: initial;
+}
+.post-comment__item .post-avatar{
+    margin-top: 2px;
+}
+.post-comment__item .post-userName p{
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+.post-comment__item .post-userName p:last-child{
+    color: #444444;
+}
+.post-comment__item .post-userName p:last-child a{
+    color: #3897f0;
+    text-decoration: underline;
+}
+.post-comment__content{
+    color: #444;
+    font-size: 12px;
+    width: calc(100% - 57px);
+    float: right;
+    margin-top: 10px;
+}
+.post-comment__reply{
+    padding: 0 0 0 40px;
+}
+.post-comment__reply .post-avatar a{
+    width: 25px;
+    height: 25px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    text-align: center;
+    line-height: 0;
+    width: 100%;
+}
+.footer .post-event{
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+    max-width: 414px;
+    margin: 0 auto;
+    background: #fff;
+    border-top: 1px solid #ddd;
+}
+.footer .post-event span{
+    display: inline-block;
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.footer .post-event .icon-plus img{
+    width: 20px;
+}
+.profile{
+    padding: 0 10px;
+}
+.profile .post-user{
+    padding: 0;
+}
+.profile-header .post-avatar{
+    margin-right: 15px;
+}
+.profile-header .post-avatar a{
+    width: 75px;
+    height: 75px;
+}
+.profile-header .post-avatar img{
+    width: 120px;
+    height: 120px;
+}
+.profile-header .post-userName .btn{
+    line-height: 28px;
+    min-width: 110px;
+    margin-top: 10px;
+    padding: 0 10px;
+    margin-right: 10px;
+}
+.post-user__name{
+    font-size: 13px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+.post-user__name p{
+    margin: 0;
+}
+.profile-content{
+    margin: 15px 0 0;
+    display: inline-block;
+    width: 100%;
+}
+.tab{
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+.tab-title{
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #efefef;
+}
+.tab-title a{
+    display: inline-block;
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+    line-height: 1.2;
+    padding: 10px 5px;
+}
+.tab-title a.active{
+    font-weight: 500;
+    color: #00688B;
+}
+.tab-title a span{
+    display: block;
+}
+.tab-content ul{
+    margin: 0;
+    padding: 0;
+}
+.tab-content li{
+    list-style: none;
+}
+.ul-list-post li{
+    width: 33.3%;
+    padding: 1px;
+    float: left;
+    line-height: 0;
+}
+.ul-list-post li a{
+    width: 129px;
+    height: 129px;
+    display: inline-block;
+}
+.ul-list-post li img{
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.ul-list-followers li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.ul-list-followers li .post-avatar a{
+    width: 40px;
+    height: 40px;
+}
+.btn-follow{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 0 10px;
+    border-radius: 4px;
+    border: 1px solid #00688B;
+    margin: 0;
+    min-width: 73px;
+}
+.btn-follow.active{
+    border-color: #ddd;
+    background: #fff;
+    color: #222 !important;
+}
+.form-change-profile{
+    margin-top: 20px;
+}
+.form-change-pw,
+.form-change-profile{
+    margin-top: 20px;
+}
+.form-change-pw label,
+.form-change-profile label{
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+}
+.form-change-pw button,
+.form-change-profile button{
+    margin-top: 30px;
+    max-width: 100px;
+}
+.profile-header .post-avatar-small a{
+    width: 60px;
+    height: 60px;
+}
+.form-change-pw button + p{
+    margin-top: 20px;
+}
+.photo-upload{
+    padding: 0 10px;
+}
+.photo-img{
+    width: 394px;
+    height: 394px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo-img img{
+    max-height: 100%;
+}
+.photo-event{
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
+}
+.photo-event p{
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+.photo-event p:last-child{
+    text-align: right;
+}
+.photo-event i{
+    font-size: 35px;
+    margin: 0 20px;
+}
+.photo-btn{
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+}
+.photo-btn .btn{
+    width: calc(50% - 1px);
+    float: left;
+    margin: 0 1px 0 0;
+    line-height: 40px;
+    min-width: 120px;
+}
+.photo-post .post-user {
+    display: table !important;
+    width: 100%;
+}
+
+.photo-post .post-user div{
+    display: table-cell !important;
+    vertical-align: top;
+}
+.photo-post .post-avatar a{
+    float: left;
+}
+.photo-post .post-avatar p{
+    font-size: 12px;
+    padding: 7px 0 0 10px;
+    width: calc(100% - 50px);
+    float: left;
+    display: inline-block;
+}
+.post-imgThumb{
+    width: 40px;
+    height: 40px;
+}
+.post-imgThumb img{
+    max-height: 100%;
+    max-width: 100%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.input_comment {
+    width: 80%;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+    border: none;
+    padding: 5px;
+    margin-top: 12px;
+}
+.comment {
+    border: 0;
+    color: #3897f0;
+    display: inline;
+    margin-top: 15px;
+    background: transparent;
+
+}
+.icon-like {
+    font-size: 26px;
+    font-weight: none;
+}
+
+.icon-comment {
+    font-size: 26px;
+    color: black;
+}
+
+.icon-like-active {
+    font-weight: 26px;
+    color: red;
+}
+
+.icon-like:hover {
+    font-size: 26px;
+    font-weight: none;
+    cursor: pointer;
+}
+.style-textarea{
+    outline: none;
+    resize: none;
+    overflow: auto;
+    border: none;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background-repeat: no-repeat;
+    width : 305px
+}
+
+@media (min-width: 420px){
+    .wrap{
+        box-shadow: 0 0 5px #efefef;
+    }
+}
+@media (max-width: 375px){
+    .ul-list-post li a {
+        width: 116px;
+        height: 116px;
+    }
+    .profile-header .post-userName .btn{
+        font-size: 11px;
+    }
+    .profile-header .post-avatar a {
+        width: 65px;
+        height: 65px;
+    }
+    .photo-img {
+        width: 355px;
+        height: 355px;
+    }
+}
+@media (max-width: 360px){
+    .form-forgot-pw-success {
+        max-width: 290px;
+    }
+    .ul-list-post li a {
+        width: 98px;
+        height: 98px;
+    }
+    .profile-header .post-userName .btn{
+        margin-top: 5px;
+    }
+    .photo-img {
+        width: 300px;
+        height: 300px;
+    }
+}
